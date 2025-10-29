@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popular Destinations | Uncle Jim Logistics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html"><img src="logo.jpg" alt="Uncle Jim Logistics Logo" class="logo"> Uncle Jim Logistics</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section id="destinations">
+    <h2 class="section-title">Popular Destinations</h2>
+    <p style="max-width: 800px; margin: auto; margin-bottom: 40px; font-size: 1.1rem;">Discover the beauty and adventure that awaits you in our carefully selected destinations.</p>
+    <div class="destinations-grid">
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?auto=format&fit=crop&w=800&q=80" alt="Mombasa" class="destination-image">
+        <div class="destination-content">
+          <h3>🏖️ Mombasa Island</h3>
+          <p>Experience the beauty of historic Mombasa with its pristine beaches, fort, and vibrant culture.</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="tsavo national park.jpg" alt="Tsavo" class="destination-image">
+        <div class="destination-content">
+          <h3>🦁 Tsavo National Park</h3>
+          <p>Witness the magnificent Big Five and breathtaking landscapes on an unforgettable safari adventure.</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80" alt="Wasini" class="destination-image">
+        <div class="destination-content">
+          <h3>🐬 Wasini Island</h3>
+          <p>Snorkel with dolphins, enjoy fresh seafood, and discover the pristine marine life of the Indian Ocean.</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="diani beach.jpg" alt="Diani" class="destination-image">
+        <div class="destination-content">
+          <h3>🏖️ Diani Beach</h3>
+          <p>Relax on white sandy beaches and crystal-clear waters perfect for water sports and relaxation.</p>
+        </div>
+      </div>
+
+      <!-- Added: Malindi & Watamu, Sabaki River Hippo Tours, Marafa (Hell's Kitchen), Mambrui Sand Dunes, Lamu -->
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80" alt="Malindi & Watamu Beaches" class="destination-image">
+        <div class="destination-content">
+          <h3>🌊 Malindi & Watamu</h3>
+          <p>Pristine beaches, coral reefs, and marine park adventures along Kenya’s stunning north coast.</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80" alt="Sabaki River Hippos" class="destination-image">
+        <div class="destination-content">
+          <h3>🦛 Sabaki River Hippo Tours</h3>
+          <p>Guided boat trips to spot hippos and vibrant birdlife where the Sabaki meets the ocean.</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Marafa Hell's Kitchen" class="destination-image">
+        <div class="destination-content">
+          <h3>🔥 Marafa Hell's Kitchen</h3>
+          <p>Dramatic sandstone canyons glowing at sunset—Kenya’s natural “painted” depression near Malindi.</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="mamburui_sanddunes.JPEG" alt="Mambrui Sand Dunes" class="destination-image">
+        <div class="destination-content">
+          <h3>🏜️ Mambrui Sand Dunes</h3>
+          <p>Endless golden dunes and “Golden Beach” vistas—perfect for photos, camel rides, and sunset walks.</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="lamu.jpeg" alt="Lamu Old Town" class="destination-image">
+        <div class="destination-content">
+          <h3>🕌 Lamu Excursions</h3>
+          <p>UNESCO-listed Swahili heritage, dhow sailing, and narrow streets rich with coastal culture.</p>
+        </div>
+      </div>
+    </div>
+    <a href="contact.html" class="btn" style="margin-top: 40px;">📅 Book a Tour</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Uncle Jim Logistics. All Rights Reserved.</p>
+    <p>Your trusted partner for transport, tours & logistics | <a href="mailto:unclejimlogistics@gmail.com">unclejimlogistics@gmail.com</a></p>
+  </footer>
+
+  <script>
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-on-scroll');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('section, .destination-card').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
+
+

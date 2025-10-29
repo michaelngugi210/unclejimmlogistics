@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Uncle Jim Logistics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html"><img src="logo.jpg" alt="Uncle Jim Logistics Logo" class="logo"> Uncle Jim Logistics</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p>Uncle Jim Logistics began with a simple mission — to move people and vehicles safely, efficiently, and with a smile. Based in Mombasa, we've built a trusted reputation for handling transport, tours, and car services across Kenya and East Africa.</p>
+    <br><br>
+    <p>With over 15 years of experience, we've grown from a small local business to a leading logistics provider serving clients across the region. Our commitment to excellence, reliability, and customer satisfaction has made us the go-to partner for transport, tours, and logistics needs.</p>
+    <br><br>
+    <p>At Uncle Jim Logistics, we understand that every journey is important, whether you're importing a luxury vehicle, planning a tour to Tsavo National Park, or booking a hotel for your coastal getaway. That's why we bring passion, expertise, and attention to detail to every service we provide.</p>
+    <br><br>
+    <div style="max-width: 800px; margin: auto; text-align: left;">
+      <h3 style="color: #f4c542; margin-top: 40px; margin-bottom: 20px; font-size: 1.5rem;">Our Mission</h3>
+      <p>To provide exceptional transport, logistics, and tour services that exceed customer expectations while building lasting relationships based on trust and reliability.</p>
+      <br>
+      <h3 style="color: #f4c542; margin-top: 40px; margin-bottom: 20px; font-size: 1.5rem;">Our Vision</h3>
+      <p>To be the leading logistics and tourism services provider in East Africa, recognized for innovation, quality, and customer-centric approach.</p>
+      <br>
+      <h3 style="color: #f4c542; margin-top: 40px; margin-bottom: 20px; font-size: 1.5rem;">Our Values</h3>
+      <ul style="color: #e0e0e0; line-height: 2; font-size: 1.1rem;">
+        <li>Reliability and punctuality</li>
+        <li>Integrity and transparency</li>
+        <li>Customer-first approach</li>
+        <li>Safety and security</li>
+        <li>Innovation and excellence</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Uncle Jim Logistics. All Rights Reserved.</p>
+    <p>Your trusted partner for transport, tours & logistics | <a href="mailto:unclejimlogistics@gmail.com">unclejimlogistics@gmail.com</a></p>
+  </footer>
+
+  <script>
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-on-scroll');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('section, p, h3').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
+
+

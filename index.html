@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uncle Jim Logistics | Home - Mombasa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html"><img src="logo.jpg" alt="Uncle Jim Logistics Logo" class="logo"> Uncle Jim Logistics</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Your Trusted Partner for Transport, Tours & Logistics</h2>
+    <p>From luxury car sales to island tours, Uncle Jim Logistics connects you to seamless travel experiences and reliable transport across Kenya and beyond. Service with a passion, every mile.</p>
+    <a href="contact.html" class="btn">🚀 Book Now</a>
+    <a href="contact.html" class="btn">💬 Request a Quote</a>
+  </section>
+
+  <section id="stats">
+    <h2 class="section-title">Why Choose Us</h2>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">1000+</div>
+        <div class="stat-label">Vehicles Delivered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">Satisfaction Rate</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="testimonial-quote">"</div>
+        <p>Uncle Jim Logistics made our car import seamless! Professional service from start to finish. Highly recommended!</p>
+        <div class="testimonial-author">— John K., Nairobi</div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-quote">"</div>
+        <p>The Wasini Island tour was absolutely magical! Great guide, delicious food, and unforgettable experiences.</p>
+        <div class="testimonial-author">— Sarah M., Mombasa</div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-quote">"</div>
+        <p>Reliable, trustworthy, and always on time. They've delivered all my vehicles safely across East Africa.</p>
+        <div class="testimonial-author">— David L., Kampala</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Uncle Jim Logistics. All Rights Reserved.</p>
+    <p>Your trusted partner for transport, tours & logistics | <a href="mailto:unclejimlogistics@gmail.com">unclejimlogistics@gmail.com</a></p>
+  </footer>
+
+  <script>
+    // Add scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-on-scroll');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('section, .testimonial, .stat-item').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
+
+

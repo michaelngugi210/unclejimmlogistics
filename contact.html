@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Uncle Jim Logistics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html"><img src="logo.jpg" alt="Uncle Jim Logistics Logo" class="logo"> Uncle Jim Logistics</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section id="contact">
+    <h2 class="section-title">Contact & Booking</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="WhatsApp Number" required>
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option>Car Sales & Imports</option>
+        <option>Hotel Booking</option>
+        <option>Transfers & Car Hire</option>
+        <option>Tours & Excursions</option>
+        <option>Transport Logistics</option>
+        <option>Clearing & Forwarding</option>
+      </select>
+      <textarea name="message" placeholder="Tell us about your requirements..." rows="5"></textarea>
+      <button type="submit" class="btn">📤 Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p>📍 <strong>Address:</strong> Kitumbo Rd – Off Kwashibu Rd, Mombasa, Kenya</p>
+      <p>📧 <strong>Email:</strong> unclejimlogistics@gmail.com</p>
+      <p>📞 <strong>Phone:</strong> +254 721 814000 | +254 732 814000</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Uncle Jim Logistics. All Rights Reserved.</p>
+    <p>Your trusted partner for transport, tours & logistics | <a href="mailto:unclejimlogistics@gmail.com">unclejimlogistics@gmail.com</a></p>
+  </footer>
+
+  <script>
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        service: formData.get('service'),
+        message: formData.get('message')
+      };
+
+      // Create WhatsApp link with message
+      const whatsappMessage = `Hello Uncle Jim Logistics!%0A%0AName: ${data.name}%0AEmail: ${data.email}%0APhone: ${data.phone}%0AService: ${data.service}%0AMessage: ${data.message}`;
+      const whatsappLink = `https://wa.me/254721814000?text=${whatsappMessage}`;
+      
+      // Open WhatsApp
+      window.open(whatsappLink, '_blank');
+      
+      // Show confirmation
+      alert('Opening WhatsApp to contact Uncle Jim Logistics. We will respond to your inquiry promptly!');
+      this.reset();
+    });
+
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-on-scroll');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
+
+

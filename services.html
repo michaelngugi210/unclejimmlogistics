@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Uncle Jim Logistics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html"><img src="logo.jpg" alt="Uncle Jim Logistics Logo" class="logo"> Uncle Jim Logistics</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <p style="max-width: 800px; margin: auto; margin-bottom: 40px; font-size: 1.1rem;">At Uncle Jim Logistics, we offer comprehensive solutions for all your transport, logistics, and travel needs.</p>
+    <div class="services-grid">
+      <div class="service">
+        <div class="service-icon">🚗</div>
+        <h3>Car Sales & Imports</h3>
+        <p><strong>Your trusted partner for luxury vehicles</strong></p>
+        <p>Import your dream car from Japan, Dubai, UK, and more. We handle sourcing, shipping, and documentation for luxury sedans, SUVs, and premium brands. Transparent pricing and full support from consultation to delivery.</p>
+        <p style="margin-top: 15px; color: #f4c542;"><strong>✓ Pre-purchase inspection</strong></p>
+        <p style="color: #f4c542;"><strong>✓ Financing assistance available</strong></p>
+        <p style="color: #f4c542;"><strong>✓ Documentation support</strong></p>
+      </div>
+      
+      <div class="service">
+        <div class="service-icon">🏨</div>
+        <h3>Hotel & Apartment Bookings</h3>
+        <p><strong>Find your perfect stay on Kenya's Coast</strong></p>
+        <p>Book the best coastal accommodations in Diani and Mombasa. We offer exclusive deals on luxury resorts and budget apartments with instant confirmation and flexible cancellation.</p>
+        <p style="margin-top: 15px; color: #f4c542;"><strong>✓ Coastal region specialists</strong></p>
+        <p style="color: #f4c542;"><strong>✓ Best price guarantee</strong></p>
+        <p style="color: #f4c542;"><strong>✓ 24/7 booking support</strong></p>
+      </div>
+      
+      <div class="service">
+        <div class="service-icon">🚕</div>
+        <h3>Transfers & Car Hire</h3>
+        <p><strong>Reliable transport when you need it most</strong></p>
+        <p>Professional airport transfers, SGR pickups, and city-to-city transport across Mombasa and beyond. Well-maintained sedans and SUVs with professional drivers. Self-drive and chauffeur options available 24/7.</p>
+        <p style="margin-top: 15px; color: #f4c542;"><strong>✓ Professional drivers</strong></p>
+        <p style="color: #f4c542;"><strong>✓ 24/7 availability</strong></p>
+        <p style="color: #f4c542;"><strong>✓ All areas covered</strong></p>
+      </div>
+      
+      <div class="service">
+        <div class="service-icon">🏝️</div>
+        <h3>Tours & Game Drives</h3>
+        <p><strong>Unforgettable adventures in Kenya's paradise</strong></p>
+        <p>Experience Wasini Island dolphin watching, Tsavo National Park game drives, and historic Mombasa tours. Full-day excursions, multi-day packages, and custom itineraries led by expert local guides.</p>
+        <p style="margin-top: 15px; color: #f4c542;"><strong>✓ Expert local guides</strong></p>
+        <p style="color: #f4c542;"><strong>✓ Small group tours</strong></p>
+        <p style="color: #f4c542;"><strong>✓ Custom itineraries</strong></p>
+      </div>
+      
+      <div class="service">
+        <div class="service-icon">🚛</div>
+        <h3>Transport Logistics</h3>
+        <p><strong>Reliable vehicle delivery across East Africa</strong></p>
+        <p>Safely transport vehicles across Kenya, Uganda, Tanzania, Rwanda, and beyond. Single cars or fleet shipments with real-time tracking, insurance, and border clearance. 99.8% on-time delivery rate.</p>
+        <p style="margin-top: 15px; color: #f4c542;"><strong>✓ Fully insured transport</strong></p>
+        <p style="color: #f4c542;"><strong>✓ Real-time tracking</strong></p>
+        <p style="color: #f4c542;"><strong>✓ Regional experts</strong></p>
+      </div>
+      
+      <div class="service">
+        <div class="service-icon">📋</div>
+        <h3>Clearing & Forwarding</h3>
+        <p><strong>Streamlined import and customs services</strong></p>
+        <p>Professional port clearance and customs services at Mombasa Port. We handle vehicles, containers, machinery, and cargo with expert knowledge of regulations, documentation, and tariffs. Fast clearance with full compliance.</p>
+        <p style="margin-top: 15px; color: #f4c542;"><strong>✓ Licensed customs agents</strong></p>
+        <p style="color: #f4c542;"><strong>✓ Fast clearance times</strong></p>
+        <p style="color: #f4c542;"><strong>✓ Transparent pricing</strong></p>
+      </div>
+    </div>
+    <a href="contact.html" class="btn" style="margin-top: 40px;">📞 Get a Quote</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Uncle Jim Logistics. All Rights Reserved.</p>
+    <p>Your trusted partner for transport, tours & logistics | <a href="mailto:unclejimlogistics@gmail.com">unclejimlogistics@gmail.com</a></p>
+  </footer>
+
+  <script>
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-on-scroll');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('section, .service').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
+
