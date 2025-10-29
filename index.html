@@ -12,7 +12,12 @@
 <body>
   <header>
     <h1><a href="index.html"><img src="logo.jpg" alt="Uncle Jim Logistics Logo" class="logo"> Uncle Jim Logistics</a></h1>
-    <nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="primaryNav" aria-expanded="false">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+    <nav id="primaryNav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -95,8 +100,17 @@
     document.querySelectorAll('section, .testimonial, .stat-item').forEach(el => {
       observer.observe(el);
     });
+
+    // Mobile menu toggle
+    const menuToggleButton = document.getElementById('menuToggle');
+    const primaryNav = document.getElementById('primaryNav');
+    if (menuToggleButton && primaryNav) {
+      menuToggleButton.addEventListener('click', () => {
+        const isOpen = primaryNav.classList.toggle('open');
+        menuToggleButton.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
   </script>
 </body>
 </html>
-
 
