@@ -19,7 +19,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 40px;
+  padding: 5px 40px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -30,14 +30,16 @@ header {
 
 header h1 {
   color: #f4c542;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   text-shadow: 0 0 20px rgba(244, 197, 66, 0.5);
+  margin: 0;
+  line-height: 1.2;
 }
 
 header h1 .logo {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -56,17 +58,18 @@ header h1 a {
   display: inline-block;
   background: transparent;
   border: 2px solid rgba(244, 197, 66, 0.5);
-  padding: 8px 10px;
-  border-radius: 8px;
+  padding: 5px 8px;
+  border-radius: 6px;
   cursor: pointer;
+  align-self: center;
 }
 
 .menu-toggle .menu-bar {
   display: block;
-  width: 24px;
+  width: 20px;
   height: 2px;
   background: #f4c542;
-  margin: 5px 0;
+  margin: 3px 0;
   transition: all 0.3s ease;
 }
 
@@ -551,22 +554,23 @@ footer a:hover {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    padding: 15px 20px;
+    padding: 5px 20px;
   }
 
   header h1 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    line-height: 1.2;
   }
 
   header h1 .logo {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
   }
 
   .menu-toggle {
-    align-self: flex-end;
-    margin-top: 5px;
+    align-self: center;
+    margin-top: 2px;
   }
 
   /* Collapse nav by default on mobile */
@@ -619,7 +623,7 @@ footer a:hover {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 50px;
 }
 
 /* Fade in animations */
