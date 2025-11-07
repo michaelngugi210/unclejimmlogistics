@@ -1,0 +1,21 @@
+# Uncle Jim Logistics - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.unclejimlogistics.co.ke/sitemap.xml
+
+# Disallow admin or private directories if any
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow search engines to crawl all pages
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /destinations.html
+Allow: /contact.html
+Allow: /gallery.html
+Allow: /images/
+Allow: /js/
+Allow: /styles.css
