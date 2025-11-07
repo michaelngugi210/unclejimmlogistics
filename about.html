@@ -3,21 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Uncle Jim Logistics</title>
+  
+  <!-- Primary Meta Tags -->
+  <title>About Us | Uncle Jim Logistics - 15+ Years Serving Kenya</title>
+  <meta name="title" content="About Uncle Jim Logistics - Transport, Tours & Logistics Experts" />
+  <meta name="description" content="Learn about Uncle Jim Logistics - Mombasa's trusted transport and tourism company. 15+ years experience, 500+ happy clients, 98% satisfaction rate. Our mission, vision and values." />
+  <meta name="keywords" content="about Uncle Jim Logistics, Mombasa logistics company, Kenya transport services, trusted tour operator, vehicle logistics Kenya, company history" />
+  <meta name="author" content="Uncle Jim Logistics" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#001f4d" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.unclejimlogistics.co.ke/about.html" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.unclejimlogistics.co.ke/about.html" />
+  <meta property="og:title" content="About Uncle Jim Logistics - 15+ Years of Excellence" />
+  <meta property="og:description" content="Discover our story, mission and values. 15+ years serving Kenya with transport, tours and logistics services. 500+ satisfied customers." />
+  <meta property="og:image" content="https://www.unclejimlogistics.co.ke/logo.jpg" />
+  <meta property="og:locale" content="en_KE" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.unclejimlogistics.co.ke/about.html" />
+  <meta name="twitter:title" content="About Uncle Jim Logistics - Transport & Tours Experts" />
+  <meta name="twitter:description" content="15+ years serving Kenya with excellence. Learn about our mission, vision and commitment to quality." />
+  <meta name="twitter:image" content="https://www.unclejimlogistics.co.ke/logo.jpg" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+  <link rel="shortcut icon" type="image/jpeg" href="logo.jpg" />
+  <link rel="apple-touch-icon" href="logo.jpg" />
+  
+  <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1><a href="index.html"><img src="logo.jpg" alt="Uncle Jim Logistics Logo" class="logo"> Uncle Jim Logistics</a></h1>
-    <nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="primaryNav" aria-expanded="false">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+    <nav id="primaryNav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="destinations.html">Destinations</a>
       <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="cars.html">Cars</a>
     </nav>
   </header>
 
@@ -52,24 +97,8 @@
     <p>Your trusted partner for transport, tours & logistics | <a href="mailto:unclejimlogistics@gmail.com">unclejimlogistics@gmail.com</a></p>
   </footer>
 
-  <script>
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-on-scroll');
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('section, p, h3').forEach(el => {
-      observer.observe(el);
-    });
-  </script>
+  <!-- External JavaScript -->
+  <script src="js/main.js" defer></script>
 </body>
 </html>
 
