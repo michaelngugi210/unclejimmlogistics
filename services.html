@@ -3,21 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Services | Uncle Jim Logistics</title>
+  
+  <!-- Primary Meta Tags -->
+  <title>Our Services | Car Imports, Tours, Logistics & Transport in Kenya</title>
+  <meta name="title" content="Services - Car Imports, Tours, Logistics | Uncle Jim Logistics" />
+  <meta name="description" content="Complete transport & logistics solutions: Car imports from Japan/Dubai, Wasini Island tours, Tsavo safaris, vehicle hire, clearing & forwarding, hotel bookings. Professional service guaranteed." />
+  <meta name="keywords" content="car import Kenya, vehicle logistics, Wasini tours, Tsavo safari, clearing forwarding Mombasa, car hire Kenya, SGR transfers, hotel booking Diani, transport services Kenya" />
+  <meta name="author" content="Uncle Jim Logistics" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#001f4d" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.unclejimlogistics.co.ke/services.html" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.unclejimlogistics.co.ke/services.html" />
+  <meta property="og:title" content="Services - Car Imports, Tours & Logistics | Uncle Jim Logistics" />
+  <meta property="og:description" content="Car imports, tours, transport logistics, clearing & forwarding, hotel bookings. Professional services across Kenya and East Africa." />
+  <meta property="og:image" content="https://www.unclejimlogistics.co.ke/logo.jpg" />
+  <meta property="og:locale" content="en_KE" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.unclejimlogistics.co.ke/services.html" />
+  <meta name="twitter:title" content="Transport, Tours & Logistics Services in Kenya" />
+  <meta name="twitter:description" content="Car imports, tours, vehicle logistics, clearing & forwarding. Complete solutions for your transport needs." />
+  <meta name="twitter:image" content="https://www.unclejimlogistics.co.ke/logo.jpg" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+  <link rel="shortcut icon" type="image/jpeg" href="logo.jpg" />
+  <link rel="apple-touch-icon" href="logo.jpg" />
+  
+  <!-- Schema.org Service Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Transport and Logistics Services",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Uncle Jim Logistics",
+      "telephone": "+254721814000",
+      "email": "unclejimlogistics@gmail.com"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Kenya"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Transport and Tour Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Car Sales & Imports",
+            "description": "Import luxury vehicles from Japan, Dubai, UK with full documentation support"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tours & Game Drives",
+            "description": "Wasini Island tours, Tsavo safaris, and coastal excursions"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Transport Logistics",
+            "description": "Vehicle delivery across Kenya, Uganda, Tanzania, Rwanda"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+  
+  <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1><a href="index.html"><img src="logo.jpg" alt="Uncle Jim Logistics Logo" class="logo"> Uncle Jim Logistics</a></h1>
-    <nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="primaryNav" aria-expanded="false">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+    <nav id="primaryNav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="destinations.html">Destinations</a>
       <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="cars.html">Cars</a>
     </nav>
   </header>
 
@@ -93,24 +186,8 @@
     <p>Your trusted partner for transport, tours & logistics | <a href="mailto:unclejimlogistics@gmail.com">unclejimlogistics@gmail.com</a></p>
   </footer>
 
-  <script>
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-on-scroll');
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('section, .service').forEach(el => {
-      observer.observe(el);
-    });
-  </script>
+  <!-- External JavaScript -->
+  <script src="js/main.js" defer></script>
 </body>
 </html>
 
